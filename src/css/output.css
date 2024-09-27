@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
 
 /*
 ! tailwindcss v3.4.11 | MIT License | https://tailwindcss.com
@@ -48,7 +50,7 @@ html,
   -o-tab-size: 4;
      tab-size: 4;
   /* 3 */
-  font-family: Poppins, sans-serif;
+  font-family: Lato, sans-serif;
   /* 4 */
   font-feature-settings: normal;
   /* 5 */
@@ -638,18 +640,6 @@ video {
   top: 50%;
 }
 
-.-bottom-4{
-  bottom: -1rem;
-}
-
-.-bottom-0{
-  bottom: -0px;
-}
-
-.bottom-8{
-  bottom: 2rem;
-}
-
 .z-0{
   z-index: 0;
 }
@@ -660,10 +650,6 @@ video {
 
 .z-20{
   z-index: 20;
-}
-
-.z-30{
-  z-index: 30;
 }
 
 .col-span-1{
@@ -714,10 +700,6 @@ video {
 
 .mt-12{
   margin-top: 3rem;
-}
-
-.mt-20{
-  margin-top: 5rem;
 }
 
 .mt-32{
@@ -811,10 +793,6 @@ video {
   height: 2.25rem;
 }
 
-.h-\[400px\]{
-  height: 400px;
-}
-
 .h-auto{
   height: auto;
 }
@@ -903,12 +881,6 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.scale-110{
-  --tw-scale-x: 1.1;
-  --tw-scale-y: 1.1;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -925,6 +897,32 @@ video {
 
 .animate-marquee{
   animation: marquee 20s linear infinite;
+}
+
+@keyframes slideUp{
+  0%, 25%{
+    transform: translateY(100%);
+    opacity: 0;
+  }
+
+  30%, 50%{
+    transform: translateY(0%);
+    opacity: 1;
+  }
+
+  55%, 75%{
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  80%, 100%{
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+.animate-slideUp{
+  animation: slideUp 6s ease-in-out infinite;
 }
 
 .select-none{
@@ -1079,6 +1077,12 @@ video {
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
+.space-y-48 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(12rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(12rem * var(--tw-space-y-reverse));
+}
+
 .space-y-6 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -1189,6 +1193,11 @@ video {
   background-color: rgb(22 163 74 / var(--tw-bg-opacity));
 }
 
+.bg-green-900{
+  --tw-bg-opacity: 1;
+  background-color: rgb(20 83 45 / var(--tw-bg-opacity));
+}
+
 .bg-transparent{
   background-color: transparent;
 }
@@ -1196,16 +1205,6 @@ video {
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-green-700{
-  --tw-bg-opacity: 1;
-  background-color: rgb(21 128 61 / var(--tw-bg-opacity));
-}
-
-.bg-green-900{
-  --tw-bg-opacity: 1;
-  background-color: rgb(20 83 45 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-b{
@@ -1234,10 +1233,6 @@ video {
 
 .to-gray-800{
   --tw-gradient-to: #1f2937 var(--tw-gradient-to-position);
-}
-
-.to-green-100{
-  --tw-gradient-to: #dcfce7 var(--tw-gradient-to-position);
 }
 
 .to-transparent{
@@ -1370,8 +1365,12 @@ video {
   text-align: center;
 }
 
+.font-oswald{
+  font-family: Oswald, sans-serif;
+}
+
 .font-sans{
-  font-family: Poppins, sans-serif;
+  font-family: Lato, sans-serif;
 }
 
 .text-2xl{
@@ -1457,6 +1456,10 @@ video {
 
 .tracking-normal{
   letter-spacing: 0em;
+}
+
+.tracking-tight{
+  letter-spacing: -0.025em;
 }
 
 .tracking-wide{
@@ -1554,6 +1557,18 @@ video {
   transition-duration: 150ms;
 }
 
+.delay-300{
+  transition-delay: 300ms;
+}
+
+.delay-500{
+  transition-delay: 500ms;
+}
+
+.delay-1000{
+  transition-delay: 1000ms;
+}
+
 .duration-150{
   transition-duration: 150ms;
 }
@@ -1566,8 +1581,20 @@ video {
   transition-duration: 300ms;
 }
 
+.duration-500{
+  transition-duration: 500ms;
+}
+
+.duration-1000{
+  transition-duration: 1000ms;
+}
+
 .ease-out{
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.ease-in-out{
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @keyframes enter{
@@ -1584,6 +1611,28 @@ video {
   }
 }
 
+.animate-in{
+  animation-name: enter;
+  animation-duration: 150ms;
+  --tw-enter-opacity: initial;
+  --tw-enter-scale: initial;
+  --tw-enter-rotate: initial;
+  --tw-enter-translate-x: initial;
+  --tw-enter-translate-y: initial;
+}
+
+.slide-out-to-top-1\/2{
+  --tw-exit-translate-y: -50%;
+}
+
+.slide-in-from-left{
+  --tw-enter-translate-x: -100%;
+}
+
+.slide-in-from-bottom{
+  --tw-enter-translate-y: 100%;
+}
+
 .duration-150{
   animation-duration: 150ms;
 }
@@ -1596,8 +1645,32 @@ video {
   animation-duration: 300ms;
 }
 
+.duration-500{
+  animation-duration: 500ms;
+}
+
+.duration-1000{
+  animation-duration: 1000ms;
+}
+
+.delay-300{
+  animation-delay: 300ms;
+}
+
+.delay-500{
+  animation-delay: 500ms;
+}
+
+.delay-1000{
+  animation-delay: 1000ms;
+}
+
 .ease-out{
   animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.ease-in-out{
+  animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @keyframes marquee {
@@ -1826,26 +1899,12 @@ video {
     display: block;
   }
 
-  .md\:min-h-\[500px\]{
-    min-height: 500px;
-  }
-
   .md\:w-1\/2{
     width: 50%;
   }
 
   .md\:w-2\/4{
     width: 50%;
-  }
-
-  .md\:scale-150{
-    --tw-scale-x: 1.5;
-    --tw-scale-y: 1.5;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  .md\:grid-cols-1{
-    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   .md\:grid-cols-2{
@@ -1941,14 +2000,6 @@ video {
 }
 
 @media (min-width: 1024px){
-  .lg\:bottom-8{
-    bottom: 2rem;
-  }
-
-  .lg\:-bottom-0{
-    bottom: -0px;
-  }
-
   .lg\:col-span-1{
     grid-column: span 1 / span 1;
   }
@@ -2016,11 +2067,6 @@ video {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
-  .lg\:-translate-x-0{
-    --tw-translate-x: -0px;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
   .lg\:scale-\[1\.4\]{
     --tw-scale-x: 1.4;
     --tw-scale-y: 1.4;
@@ -2077,6 +2123,11 @@ video {
     text-align: center;
   }
 
+  .lg\:text-4xl{
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
   .lg\:text-5xl{
     font-size: 3rem;
     line-height: 1;
@@ -2092,24 +2143,19 @@ video {
     line-height: 1.75rem;
   }
 
-  .lg\:text-4xl{
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-
   .lg\:before\:left-0::before{
     content: var(--tw-content);
     left: 0px;
   }
 
-  .lg\:before\:left-5::before{
-    content: var(--tw-content);
-    left: 1.25rem;
-  }
-
   .lg\:before\:left-2::before{
     content: var(--tw-content);
     left: 0.5rem;
+  }
+
+  .lg\:before\:left-5::before{
+    content: var(--tw-content);
+    left: 1.25rem;
   }
 
   .lg\:before\:-translate-x-0::before{
@@ -2130,19 +2176,18 @@ video {
     padding-right: 1.25rem;
   }
 
-  .xl\:text-7xl{
-    font-size: 4.5rem;
+  .xl\:text-9xl{
+    font-size: 8rem;
     line-height: 1;
+  }
+
+  .xl\:text-\[9rem\]{
+    font-size: 9rem;
   }
 
   .xl\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .xl\:text-8xl{
-    font-size: 6rem;
-    line-height: 1;
   }
 }
 

@@ -4,9 +4,17 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ["Poppins", "sans-serif"],
+        sans: ["Lato", "sans-serif"],
+        oswald: ["Oswald", "sans-serif"],
       },
       keyframes: {
+        slideUp: {
+          "0%, 25%": { transform: "translateY(100%)", opacity: 0 }, // Start off-screen below
+          "30%, 50%": { transform: "translateY(0%)", opacity: 1 }, // Slide up into view
+          "55%, 75%": { transform: "translateY(-100%)", opacity: 0 }, // Slide up out of view
+          "80%, 100%": { transform: "translateY(100%)", opacity: 0 },
+        },
+
         marquee: {
           "0%": {
             transform: "translateX(0)",
@@ -19,6 +27,7 @@ module.exports = {
       // Add custom animations
       animation: {
         marquee: "marquee 20s linear infinite",
+        slideUp: "slideUp 6s ease-in-out infinite",
       },
     },
   },
