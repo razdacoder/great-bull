@@ -25,3 +25,44 @@
     display: none;
   }
 }
+
+@property --num {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+/* @keyframes counter {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 40;
+  }
+} */
+/* 
+@keyframes counter2 {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 4.5;
+  }
+}
+
+@keyframes counter3 {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 300;
+  }
+}
+
+@keyframes counter4 {
+  from {
+    --num: 0;
+  }
+  to {
+    --num: 16;
+  }
+} */
