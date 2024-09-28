@@ -25,9 +25,9 @@
   </head>
 
   <body class="font-sans">
-    <header class="min-h-screen flex flex-col bg-green-900">
+    <header class="h-[60vh] lg:h-screen flex flex-col bg-green-900">
       <div
-        class="container flex items-center justify-between py-5 mx-auto md:flex-row px-4 xl:px-5"
+        class="container flex items-center justify-between py-8 mx-auto md:flex-row px-4 md:px-8 xl:px-5"
       >
         <div class="flex items-center flex-1 gap-12">
           <a
@@ -172,12 +172,14 @@
           </span>
         </div>
         <div class="block lg:hidden">
-          <button><i class="fa-solid fa-bars"></i></button>
+          <button class="text-white"><i class="fa-solid fa-bars"></i></button>
         </div>
       </div>
 
       <section class="px-2 py-16 md:py-32 md:px-0 flex-1">
-        <div class="container items-center px-4 mx-auto xl:px-5 space-y-24">
+        <div
+          class="container items-center px-4 mx-auto xl:px-5 space-y-16 lg:space-y-24"
+        >
           <div class="overflow-hidden">
             <h1
               class="animate-in slide-in-from-left duration-1000 ease-in-out font-oswald text-4xl text-center md:text-left font-medium tracking-tight text-white sm:text-5xl md:text-6xl xl:text-[9rem] uppercase"
@@ -192,7 +194,9 @@
             </h1>
           </div>
 
-          <p class="text-5xl text-white">
+          <p
+            class="text-xl text-center md:text-left md:text-3xl lg:text-5xl text-white"
+          >
             A consulting business, specialized<br />
             in energy efficiency and<br />
             industrial refrigeration
