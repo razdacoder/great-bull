@@ -31,8 +31,8 @@
       >
         <div class="flex items-center flex-1 gap-12">
           <a
-            href="#_"
-            class="flex items-center w-auto text-2xl font-extrabold leading-none text-white select-none uppercase"
+            href="index.html"
+            class="flex items-center w-auto text-2xl font-extrabold leading-none text-white select-none"
             >Peter Amajor.</a
           >
 
@@ -109,7 +109,7 @@
               </span>
             </a>
             <a
-              href="#_"
+              href="about.html"
               class="relative font-medium leading-6 text-white transition duration-150 ease-out hover:text-green-600"
               x-data="{ hover: false }"
               @mouseenter="hover = true"
@@ -413,9 +413,9 @@
     <main>
       <section class="bg-green-600 relative py-28 pb-6">
         <div class="container max-w-7xl px-4 mx-auto xl:px-5 space-y-12">
-          <div class="w-full md:w-2/4 md:mx-auto">
+          <div class="max-w-lg">
             <h2
-              class="text-white text-center text-2xl md:text-3xl font-bold tracking-wide relative mx-auto before:block before:absolute before:-bottom-4 before:left-1/2 before:-translate-x-1/2 before:h-1 before:w-2/12 before:bg-white before:mx-auto before:rounded"
+              class="text-white font-oswald text-2xl md:text-4xl font-bold tracking-wide"
             >
               Trusted By Fast Moving Brands & Agency Worldwide
             </h2>
@@ -700,17 +700,16 @@
                     </div>
                 </div>
             </section> -->
-      <section class="py-24">
+      <section class="mt-10 py-24">
         <div class="container max-w-7xl mx-auto px-8 xl:px-5 space-y-12">
           <h2
-            class="text-gray-900 text-center text-3xl md:text-5xl font-bold tracking-normal relative mx-auto before:block before:absolute before:-bottom-6 before:left-1/2 before:-translate-x-1/2 before:h-1 before:w-2/12 before:bg-green-600 before:mx-auto before:rounded"
+            class="text-gray-900 font-oswald text-3xl md:text-5xl font-bold tracking-normal"
           >
-            Our Recently<br />
-            Completed Projects
+            Our Recently Completed Projects
           </h2>
           <div x-data="{ shown: false }" x-intersect="shown = true">
             <div
-              class="animate-in slide-in-from-left ease-out duration-700 grid grid-cols-1 lg:grid-cols-3 gap-12 lg:grid-rows-2"
+              class="animate-in slide-in-from-left ease-out duration-700 grid grid-cols-1 lg:grid-cols-3 gap-12"
               x-show="shown"
               x-transition
             >
@@ -737,15 +736,17 @@
         </div>
       </section>
 
-      <section class="py-24 bg-blue-300/30">
+      <section class="py-24 bg-green-300/30">
         <div class="container max-w-7xl mx-auto px-8 xl:px-5 space-y-24">
           <div class="flex flex-col lg:flex-row items-end gap-16">
             <h2
-              class="text-gray-900 text-center text-3xl md:text-5xl font-bold tracking-normal relative before:block before:absolute before:-bottom-6 before:left-1/2 before:-translate-x-1/2 lg:before:left-10 lg:before:-translate-x-0 before:h-1 before:w-2/12 before:bg-green-600 before:rounded"
+              class="text-gray-900 font-oswald text-center text-3xl md:text-5xl font-bold tracking-normal"
             >
               We Follow Simple Process For Work
             </h2>
-            <p class="text-center lg:text-left">
+            <p
+              class="text-center lg:text-left text-lg text-gray-500 font-medium"
+            >
               Venenatis blanditiis, venenatis venenatis, cupiditate corrupti
               quis rem, enim praesentium! Qui adipiscing congue, pharetra sunt
               nihil laboris, hic optio cupiditate corrupti quis rem.
@@ -765,10 +766,10 @@
                 >
               </div>
               <div class="space-y-2">
-                <h4 class="text-2xl text-center font-semibold">
+                <h4 class="text-2xl text-center font-semibold font-oswald">
                   Reserach Projects
                 </h4>
-                <p class="font-medium text-center">
+                <p class="font-medium text-center text-lg text-gray-500">
                   Eget magnis neque quaerat mollit. Maiores aperiam ac nonummy
                   cupiditate nulla.
                 </p>
@@ -787,10 +788,10 @@
                 >
               </div>
               <div class="space-y-2">
-                <h4 class="text-2xl text-center font-semibold">
+                <h4 class="text-2xl text-center font-semibold font-oswald">
                   Creating Strategy
                 </h4>
-                <p class="font-medium text-center">
+                <p class="font-medium text-center text-lg text-gray-500">
                   Eget magnis neque quaerat mollit. Maiores aperiam ac nonummy
                   cupiditate nulla.
                 </p>
@@ -809,10 +810,10 @@
                 >
               </div>
               <div class="space-y-2">
-                <h4 class="text-2xl text-center font-semibold">
+                <h4 class="text-2xl text-center font-semibold font-oswald">
                   Implement & Success
                 </h4>
-                <p class="font-medium text-center">
+                <p class="font-medium text-center text-lg text-gray-500">
                   Eget magnis neque quaerat mollit. Maiores aperiam ac nonummy
                   cupiditate nulla.
                 </p>
@@ -829,13 +830,13 @@
           class="container max-w-7xl px-8 xl:px-5 flex flex-col items-start mx-auto lg:items-center space-y-12"
         >
           <p
-            class="relative flex items-start justify-start w-full text-center md:text-left text-sm md:text-lg font-bold tracking-wider text-green-500 uppercase lg:justify-center lg:items-center"
+            class="relative flex items-start justify-start w-full text-center md:text-left text-sm md:text-lg font-bold text-green-500 uppercase lg:justify-center lg:items-center"
             data-primary="purple-500"
           >
             We Have 10k+ Client's Satisfactory Reviews
           </p>
           <h2
-            class="relative flex items-start justify-start w-full text-center md:text-left max-w-3xl text-3xl md:text-5xl font-bold lg:justify-center"
+            class="relative font-oswald capitalize flex items-start justify-start w-full text-center md:text-left max-w-3xl text-3xl md:text-5xl font-bold lg:justify-center"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -942,13 +943,15 @@
               <img src="images/newsletter.png" alt="" class="lg:scale-[1.4]" />
             </div>
             <div class="w-full lg:w-4/6 space-y-8">
-              <div class="space-y-12">
+              <div class="space-y-8">
                 <h2
-                  class="text-white md:text-center lg:text-left inline-block text-5xl font-bold tracking-normal relative before:block before:absolute before:-bottom-6 before:left-0 md:before:left-1/2 md:before:-translate-x-1/2 before:h-1 before:w-2/12 before:bg-white before:mx-auto before:rounded"
+                  class="font-oswald text-white md:text-center lg:text-left inline-block text-5xl font-bold tracking-normal"
                 >
                   Subscribe Our Newsletter To Get Updates !!
                 </h2>
-                <p class="text-white md:text-center lg:text-left">
+                <p
+                  class="text-white md:text-center lg:text-left text-lg font-medium"
+                >
                   Venenatis blanditiis, venenatis venenatis, cupiditate corrupti
                   quis rem, enim praesentium! Qui adipiscing congue rem.
                 </p>
@@ -963,7 +966,7 @@
                 </div>
                 <button
                   type="button"
-                  class="inline-flex items-center justify-center px-12 py-4 text-sm font-medium tracking-wide text-gray-900 transition-colors duration-200 rounded-md bg-white hover:bg-green-500 hover:text-white focus:ring-2 focus:ring-offset-2 focus:ring-neutral-900 focus:shadow-outline focus:outline-none"
+                  class="inline-flex items-center justify-center px-12 py-4 font-semibold tracking-wide text-gray-900 transition-colors duration-200 rounded-md bg-white hover:bg-green-500 hover:text-white focus:ring-2 focus:ring-offset-2 focus:ring-neutral-900 focus:shadow-outline focus:outline-none"
                 >
                   Subscribe Now
                 </button>
@@ -980,7 +983,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
           <div class="col-span-1 space-y-8 p-12">
             <h2
-              class="text-white text-xl font-medium capitalize tracking-normal relative before:block before:absolute before:-bottom-6 before:left-0 before:h-1 before:w-2/12 before:bg-green-600 before:mx-auto before:rounded"
+              class="text-white font-oswald text-xl font-medium capitalize tracking-normal relative before:block before:absolute before:-bottom-6 before:left-0 before:h-1 before:w-2/12 before:bg-green-600 before:mx-auto before:rounded"
             >
               About our company
             </h2>
@@ -1012,7 +1015,7 @@
             class="md:col-span-1 space-y-12 px-12 rounded-xl bg-gradient-to-b from-transparent to-gray-800 py-12"
           >
             <h2
-              class="text-white text-xl font-medium capitalize tracking-normal relative before:block before:absolute before:-bottom-6 before:left-0 before:h-1 before:w-2/12 before:bg-green-600 before:mx-auto before:rounded"
+              class="text-white font-oswald text-xl font-medium capitalize tracking-normal relative before:block before:absolute before:-bottom-6 before:left-0 before:h-1 before:w-2/12 before:bg-green-600 before:mx-auto before:rounded"
             >
               Opening Hours
             </h2>
@@ -1043,7 +1046,7 @@
           <!-- Company Column -->
           <div class="md:col-span-1 space-y-12 p-12">
             <h2
-              class="text-white text-xl font-medium capitalize tracking-normal relative before:block before:absolute before:-bottom-6 before:left-0 before:h-1 before:w-2/12 before:bg-green-600 before:mx-auto before:rounded"
+              class="text-white font-oswald text-xl font-medium capitalize tracking-normal relative before:block before:absolute before:-bottom-6 before:left-0 before:h-1 before:w-2/12 before:bg-green-600 before:mx-auto before:rounded"
             >
               Quick Links
             </h2>
